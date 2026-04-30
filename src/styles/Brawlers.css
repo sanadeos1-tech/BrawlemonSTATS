@@ -1,0 +1,128 @@
+.brawlers {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.brawlers h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #e94560;
+}
+
+.brawlers .subtitle {
+  color: #b0b0b0;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.brawlers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.brawler-card {
+  background: rgba(15, 52, 96, 0.3);
+  border: 2px solid #0f3460;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.brawler-card:hover {
+  border-color: #e94560;
+  background: rgba(15, 52, 96, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(233, 69, 96, 0.3);
+}
+
+.brawler-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.brawler-header h3 {
+  font-size: 22px;
+  margin: 0;
+  color: #fff;
+}
+
+.rarity {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rarity.common {
+  background: rgba(100, 200, 100, 0.3);
+  color: #64c864;
+  border: 1px solid #64c864;
+}
+
+.rarity.rare {
+  background: rgba(100, 150, 255, 0.3);
+  color: #6496ff;
+  border: 1px solid #6496ff;
+}
+
+.rarity.super {
+  background: rgba(255, 150, 100, 0.3);
+  color: #ff9664;
+  border: 1px solid #ff9664;
+}
+
+.rarity.epic {
+  background: rgba(200, 100, 255, 0.3);
+  color: #c864ff;
+  border: 1px solid #c864ff;
+}
+
+.rarity.mythic {
+  background: rgba(255, 200, 100, 0.3);
+  color: #ffc864;
+  border: 1px solid #ffc864;
+}
+
+.rarity.legendary {
+  background: rgba(255, 100, 100, 0.3);
+  color: #ff6464;
+  border: 1px solid #ff6464;
+}
+
+.brawler-info {
+  margin: 15px 0;
+  padding: 10px;
+  background: rgba(233, 69, 96, 0.05);
+  border-radius: 4px;
+}
+
+.brawler-info p {
+  margin: 5px 0;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.brawler-info strong {
+  color: #e94560;
+}
+
+.brawler-description {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
