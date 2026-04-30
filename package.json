@@ -1,0 +1,39 @@
+{
+  "name": "brawlemon-stats",
+  "version": "0.1.0",
+  "description": "Специализированное ПО для игроков игры Brawl Stars",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test",
+    "react-eject": "react-scripts eject",
+    "electron-start": "electron .",
+    "start": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000 && npm run electron-start\"",
+    "build": "npm run react-build && npm run electron-build",
+    "electron-build": "electron-builder"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^24.4.0",
+    "concurrently": "^7.6.0",
+    "wait-on": "^7.0.1"
+  },
+  "build": {
+    "appId": "com.brawlemon.stats",
+    "productName": "Brawlemon Stats",
+    "files": [
+      "build/**/*",
+      "main.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
